@@ -9,24 +9,6 @@
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
-        <!-- Role -->
-        <div class="mt-4">
-            <ul>
-                <li class="mt-1">
-                    <input id="klant" type="radio" name="role" value="Klant" checked required /><label for="klant" style="padding-left: 2.5%;">Klant</label>
-                </li>
-                <li class="mt-1">
-                    <input id="Monteur" type="radio" name="role" value="Monteur" required /><label for="Monteur" style="padding-left: 2.5%;">Monteur</label>
-                </li>
-                <li class="mt-1">
-                    <input id="Planner" type="radio" name="role" value="Planner" required /><label for="Planner" style="padding-left: 2.5%;">Planner</label>
-                </li>
-                <li class="mt-1">
-                    <input id="Inkoper" type="radio" name="role" value="Inkoper" required /><label for="Inkoper" style="padding-left: 2.5%;">Inkoper</label>
-                </li>
-            </ul>
-        </div>
-
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
@@ -58,7 +40,7 @@
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
+            <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('login') }}">
                 {{ __('Already registered?') }}
             </a>
 
