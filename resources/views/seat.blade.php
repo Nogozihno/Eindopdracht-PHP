@@ -7,7 +7,7 @@
     <p><strong>Amount: </strong> {{ $seat['amount'] }}</p>
     <p><strong>Upholstery: </strong> {{ $seat['upholstery'] }}</p>
     <p><strong>Assembly time: </strong> {{ $seat['assembly_time'] }}</p>
-    <p><strong>Costs: </strong> {{ $seat['costs'] }}</p>
+    <p><strong>Costs: </strong> € {{ $seat['costs'] }}</p>
     <image src="{{ $seat['image'] }}"> 
     
 </x-layout>
