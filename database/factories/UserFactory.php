@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
-
-
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
  */
@@ -25,10 +23,8 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
-        $a = array("Klant","Monteur","Planner","Inkoper");
         return [
             'name' => fake()->name(),
-            'role' => array_rand($a,1),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
