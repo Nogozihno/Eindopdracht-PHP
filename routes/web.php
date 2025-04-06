@@ -48,20 +48,20 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/shoppingbag', function () {
-    return view('shoppingbag', [
-        'products' => Product::getFive()
-    ]);
-});
+// Route::get('/shoppingbag', function () {
+//     return view('shoppingbag', [
+//         'products' => Product::getFive()
+//     ]);
+// });
 
-Route::get('/checkout', function () {
-    return view('checkout', [
-        'products' => Product::getFive()
-    ]);
-});
+// Route::get('/checkout', function () {
+//     return view('checkout', [
+//         'products' => Product::getFive()
+//     ]);
+// });
 
-Route::get('/thankyou', function () {
-    return view('thankyou');
-});
+// Route::get('/thankyou', function () {
+//     return view('thankyou');
+// });
 
 

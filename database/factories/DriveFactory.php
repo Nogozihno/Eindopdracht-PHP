@@ -20,11 +20,11 @@ class DriveFactory extends Factory
     {
         return [
             'name' => fake()->word(),
-            'type_of_drive' => fake()->randomElement(['Waterstof', 'Elektrisch']),
+            'type' => fake()->randomElement(['Waterstof', 'Elektrisch']),
             'horsepower' => fake()->numberBetween(50, 500), // Should be integers, not strings
             'assembly_time' => fake()->numberBetween(1, 10),
             'costs' => fake()->randomFloat(2, 1000, 10000),
-            'image' => fake()->imageUrl(640, 480, 'drive', true, 'Faker', true)
+            'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGC1V_aR8_q9FtCeOFDooPY-V0qFNStdju3Q&s'
         ];
     }
 }

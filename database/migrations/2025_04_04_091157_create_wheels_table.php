@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('type_of_tire');
             $table->decimal('diameter', 6, 2);
             $table->integer('amount');
-            $table->string('compatible_with_chassis');
+            $table->string('chassy_compatibility');
             $table->integer('assembly_time');
             $table->decimal('costs', 8, 2);
             $table->string('image');
