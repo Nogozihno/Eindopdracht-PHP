@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('type_of_drive');
-            $table->string('horsepower');
+            $table->integer('horsepower');
             $table->integer('assembly_time');
             $table->decimal('costs', 8, 2);
             $table->string('image');
